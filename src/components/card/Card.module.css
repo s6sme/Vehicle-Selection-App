@@ -1,0 +1,93 @@
+.sectionCta {
+  padding: 3rem 8rem;
+}
+
+.cta {
+  text-align: center;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  background-image: url(http://t1.gstatic.com/images?q=tbn:ANd9GcRhrt85G0kvmp9V4pJhkAuWqJdqe1T6_fekxHRK1KQd4ah1xcQ1);
+  overflow: hidden;
+}
+
+.ctaTextBox {
+  padding: 3rem 4rem;
+  color: #fff;
+}
+
+.cta .headingSecondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.headingSecondary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.ctaText {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+
+.navCta:link,
+.navCta:visited {
+  max-width: 200px;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  color: #000;
+  background-color: #fff;
+}
+
+.navCta:hover,
+.navCta:active {
+  background-color: #868e96;
+}
+
+/**************************/
+/* MEDIA QUERIES */
+/**************************/
+
+@media screen and (max-width: 768px) {
+  .sectionCta {
+    padding: 2rem 4rem;
+  }
+
+  .headingSecondary {
+    font-size: 2.5rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .ctaText {
+    font-size: 1.1rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .navCta:link,
+  .navCta:visited {
+    max-width: 160px;
+    padding: 0.4rem 1.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .sectionCta {
+    padding: 3rem 2rem;
+  }
+
+  .ctaTextBox {
+    padding: 3rem 2rem;
+  }
+
+  .headingSecondary {
+    margin-bottom: 6.4rem;
+  }
+
+  .ctaText {
+    margin-bottom: 2.4rem;
+  }
+}

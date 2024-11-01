@@ -1,0 +1,276 @@
+.sectionFleet {
+  padding: 2rem 0;
+}
+
+.subheading {
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.headingPrimary {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 1.05;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.headingTertiary {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.linksBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.links {
+  text-decoration: none;
+  color: #333;
+}
+
+.links:link,
+.links:visited {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 9px;
+  color: #000;
+  background-color: #dee2e6;
+}
+
+.links:hover,
+.links:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.gridContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+.gridContainer1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 {
+  width: 350px;
+  height: 250px;
+  border-radius: 25px;
+}
+
+.item2 {
+  width: 300px;
+  height: 150px;
+  border-radius: 25px;
+}
+
+.showAllBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.2rem;
+}
+
+.showAll {
+  text-decoration: none;
+  color: #333;
+}
+
+.showAll:link,
+.showAll:visited {
+  max-width: 300px;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  color: #000;
+  background-color: #dee2e6;
+}
+
+.showAll:hover,
+.showAll:active {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Стилі для контейнера */
+.vehiclemakeselect {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для заголовка */
+.vehiclemakeselect label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Стилі для селекту */
+.vehiclemakeselect select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+/* Стиль при наведенні на селект */
+.vehiclemakeselect select:hover {
+  border-color: #007bff;
+}
+
+/* Стиль при фокусуванні на селект */
+.vehiclemakeselect select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Контейнер для вибору і кнопки */
+.vehicleSelectionContainer {
+  display: flex;
+  align-items: center; /* Вертикальне вирівнювання по центру */
+  justify-content: center; /* Розподіл простору між елементами */
+  margin: 20px 0; /* Відступи зверху і знизу */
+}
+
+/* Стилі для селектів */
+.vehicleSelectionContainer select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px; /* Відступ між селектами */
+  transition: border-color 0.3s;
+}
+
+/* Стиль при фокусуванні на селектах */
+.vehicleSelectionContainer select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Стилі для кнопки Next */
+.nextButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Основний колір */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Анімація переходу */
+}
+
+/* Стиль при наведенні на кнопку */
+.nextButton:hover {
+  background-color: #0056b3; /* Темніший відтінок при наведенні */
+}
+
+/* Стиль при натисканні на кнопку */
+.nextButton:active {
+  transform: scale(0.95); /* Зменшення кнопки при натисканні */
+}
+
+/* Додатковий стиль для вимкненої кнопки */
+.disabled {
+  background-color: #ccc; /* Колір для вимкненої кнопки */
+  cursor: not-allowed; /* Вказівник курсору */
+}
+
+/**************************/
+/* MEDIA QUERIES */
+/**************************/
+
+@media screen and (max-width: 820px) {
+  .linksBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .links {
+    margin-bottom: 10px;
+  }
+
+  .gridContainer,
+  .gridContainer1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .item1,
+  .item2 {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .linksBox {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .links {
+    margin-bottom: 10px;
+  }
+
+  .gridContainer,
+  .gridContainer1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .item1,
+  .item2 {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .gridContainer,
+  .gridContainer1 {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .item1,
+  .item2 {
+    width: 70%;
+    height: auto;
+  }
+}

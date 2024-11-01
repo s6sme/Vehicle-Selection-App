@@ -1,0 +1,142 @@
+.cars {
+  padding: 2rem 0;
+}
+
+.headingPrimary {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 1.05;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.carTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.carText {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 3rem 3rem 3rem 3rem;
+}
+
+.featuresIcon {
+  box-sizing: content-box;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+/*  */
+
+.gallery {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template: repeat(7, 5vw) / repeat(8, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+}
+.gallery1 {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+}
+.gallery2 {
+  grid-row: 1 / span 3;
+  grid-column: 3 / span 3;
+}
+.gallery3 {
+  grid-row: 1 / span 2;
+  grid-column: 6 / 7;
+}
+.gallery4 {
+  grid-row: 1 / span 2;
+  grid-column: 7 / -1;
+}
+.gallery5 {
+  grid-row: 3 / span 3;
+  grid-column: 1 / span 2;
+}
+.gallery6 {
+  grid-row: 4 / span 2;
+  grid-column: 3 / span 2;
+}
+.gallery7 {
+  grid-row: 4 / 5;
+  grid-column: 5 / 6;
+}
+.gallery8 {
+  grid-row: 3 / span 2;
+  grid-column: 6 / span 2;
+}
+.gallery9 {
+  grid-row: 3 / span 3;
+  grid-column: 8 / -1;
+}
+.gallery10 {
+  grid-row: 6 / span 2;
+  grid-column: 1 / 2;
+}
+.gallery11 {
+  grid-row: 6 / span 2;
+  grid-column: 2 / span 2;
+}
+.gallery12 {
+  grid-row: 6 / span 2;
+  grid-column: 4 / 5;
+}
+.gallery13 {
+  grid-row: 5 / span 3;
+  grid-column: 5 / span 3;
+}
+.gallery14 {
+  grid-row: 6 / span 2;
+  grid-column: 8 / -1;
+}
+.galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media screen and (max-width: 390px) {
+  /* Styles for below 390px screens */
+
+  .headingPrimary {
+    font-size: 3rem;
+  }
+
+  .carTitle {
+    font-size: 1.8rem;
+  }
+
+  .carText {
+    font-size: 1rem;
+    margin: 2rem;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .gallery3,
+  .gallery4,
+  .gallery5,
+  .gallery6,
+  .gallery7,
+  .gallery8,
+  .gallery9,
+  .gallery10,
+  .gallery11,
+  .gallery12,
+  .gallery13,
+  .gallery14 {
+    display: none;
+  }
+}
